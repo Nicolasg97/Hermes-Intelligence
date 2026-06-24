@@ -1,0 +1,10 @@
+{
+  "name": "meta-sync",
+  "version": "1.0.0",
+  "description": "Hermes Intelligence - Meta Ads Connector",
+  "type": "module",
+  "main": "src/main.js",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0"
+  }
+}

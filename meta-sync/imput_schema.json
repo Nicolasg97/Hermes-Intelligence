@@ -1,0 +1,46 @@
+{
+  "$schema": "https://apify.com/schemas/v1/input.ide.json",
+  "title": "Meta Sync",
+  "description": "Descarga datos de Meta Ads y los almacena en Supabase.",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "empresa_id": {
+      "title": "Empresa ID",
+      "type": "integer",
+      "description": "ID interno de la empresa",
+      "editor": "number"
+    },
+    "ad_account_id": {
+      "title": "Ad Account ID",
+      "type": "string",
+      "description": "Ej: act_123456789",
+      "editor": "textfield"
+    },
+    "meta_access_token": {
+      "title": "Meta Access Token",
+      "type": "string",
+      "description": "Token de Meta",
+      "editor": "textfield"
+    },
+    "supabase_url": {
+      "title": "Supabase URL",
+      "type": "string",
+      "description": "URL del proyecto Supabase",
+      "editor": "textfield"
+    },
+    "supabase_service_key": {
+      "title": "Supabase Service Key",
+      "type": "string",
+      "description": "Clave service_role",
+      "editor": "textfield"
+    }
+  },
+  "required": [
+    "empresa_id",
+    "ad_account_id",
+    "meta_access_token",
+    "supabase_url",
+    "supabase_service_key"
+  ]
+}
